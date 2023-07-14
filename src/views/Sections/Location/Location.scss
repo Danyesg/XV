@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@500&display=swap');
+
+// Styling for the portfolio section
+.portfolio-section {
+  * {
+    z-index: 2;
+  }
+
+  .ceremony-header {
+    padding-bottom: 20px;
+
+    .section-subheading {
+      margin-bottom: 10px;
+    }
+  }
+
+  .hashtag {
+    margin: 20px;
+    font-size: 12pt;
+    font-weight: 500;
+    color: #347a50f0; //color de letras Hasshtag
+    border: 3pt solid #367444bb;
+    background-color: #FAF9F6;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px #898882;
+
+    &:hover {
+      background-color: darken($primary, 7.5%) !important;
+      border-color: darken($primary, 7.5%) !important;
+      color: rgb(241, 238, 241);
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 0.2rem rgba(21, 119, 98, 0.397) !important;
+    }
+  }
+
+  // -VIDEO
+  .countdownAndVideoDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    .video-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 50%;
+      width: 100%;
+      margin: 20px;
+
+      .video {
+        align-self: center;
+        width: 100vw;
+      }
+    }
+  }
+
+  // -IMAGE CHANGE ON HOVER
+  .container {
+    position: relative;
+
+    .image {
+      opacity: 1;
+      display: block;
+      height: auto;
+      transition: 0.5s ease;
+      backface-visibility: hidden;
+    }
+
+    .middle {
+      transition: 0.5s ease;
+      opacity: 0;
+      position: absolute;
+    }
+  }
+
+  .container:hover .image {
+    opacity: 0.3;
+  }
+
+  .container:hover .middle {
+    opacity: 1;
+  }
+
+  // -COUNTDOWN
+  .countdownIntro {
+    font-size: 30px;
+    text-align: center;
+    @include script-font;
+  }
+
+  .countdownWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px;
+    margin-top: 0px;
+    justify-content: center;
+
+    .countdownSection {
+      flex: 1;
+      display: flex;
+      align-content: stretch;
+
+      .countWrapper {
+        flex: 1;
+        border: 5px solid #dee2e6; //contorno
+        border-radius: 20px;
+        background-color: #f8f9fa;
+        color: #1c604e; // numeros
+        margin: 5px;
+        padding: 10px;
+        width: 110px;
+        justify-content: center;
+        justify-items: center;
+        box-shadow: 5px 5px #337357ba; //sombra count
+
+        .count {
+          font-size: 40px;
+          @include script-font;
+          text-align: center;
+        }
+
+        .unit {
+          text-align: center;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .instaWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px;
+
+    .spacedCountdownLinks {
+      margin-left: 0.25em;
+      margin-right: 0.25em;
+    }
+  }
+
+  // -T MINUS 15
+  .countdownIntro {
+    font-size: 30px;
+    text-align: center;
+    @include script-font;
+    margin-bottom: 35px;
+  }
+
+  .joinButtonWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .join-now {
+      padding: 15px 75px;
+    }
+  }
+
+  .vendors {
+    justify-content: center;
+    margin: 40px;
+
+    .countdownLinks {
+      margin-left: 0.25em;
+    }
+  }
+
+  // -COUNTDOWN END
+  .finishedCountdown {
+    .countWrapper {
+      border: #e9ecef;
+      color: #cedad7;
+    }
+
+    .finishedHeader {
+      color: #ced4da;
+    }
+  }
+}
+
+// -MOBILE VIEW
+@media (max-width: 768px) {
+  .video {
+    width: 100%;
+  }
+
+  .middle {
+    top: 0%;
+    left: 0%;
+  }
+
+  .image {
+    width: 100%;
+  }
+
+  .imageHover {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+  }
+
+  .terra-location {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+
+// -DESKTOP VIEW
+@media (min-width: 769px) {
+  .middle {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+
+  .image {
+    width: 560;
+  }
+
+  .imageHover {
+    width: 560;
+  }
+
+  .finishedCountdown {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+
+  .terra-location {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+
+.terra-location {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+/* CSS para slide */
+
+* {
+  box-sizing: border-box
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 32%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(39, 92, 87);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: #1e564a53;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgb(29, 96, 84);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade1;
+  animation-duration: 120s;
+}
+
+@keyframes fade1 {
+  from {
+    opacity: 0.5
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+
+.p1 {
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+}
+
+.p2 {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.p3 {
+  font-family: "Parisienne", "Allura", "Snell Roundhand", "Kaushan Script", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji", cursive;
+  font-size: xx-large;
+}
+
+.p4 {
+  font-family: "Apple Chancery", cursive, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: larger;
+}
+
+.p5 {
+  font-family: 'Edu VIC WA NT Beginner', cursive;
+  font-size: larger;
+
+}

@@ -1,7 +1,7 @@
 ---
 anchor: "Ceremonia"
 header: "Ceremonia"
-subheader: "Noviembre 18, 2023 7pm "
+subheader: ""
 imageFileName: "../../assests/images/portfolio/hw.jpg"
 portfolios: [
   {

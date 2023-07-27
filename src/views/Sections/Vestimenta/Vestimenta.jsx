@@ -20,8 +20,8 @@ const Vestimenta = ({ className, frontmatter }) => {
 
   return (
     <div>
-      <PageSection className={className} id={anchor}>
-        <Notifications options={{ zIndex: 100, top: "20px" }} />
+      <PageSection className={className} id={anchor} style={{ background: "#a5b5aa" }}>
+        <Notifications options={{ zIndex: 10, top: "20px" }} />
         <Row>
           <SectionHeader header={rootHeader} subheader={rootSubHeader} />
         </Row>
@@ -32,6 +32,7 @@ const Vestimenta = ({ className, frontmatter }) => {
                 <p className="large text-muted">
                   <SectionHeader header="Mujeres" />
                 </p>
+                <p> Formal casual <br /></p>
                 <p className="large text-muted">
                   Vestido midi / coctel
                   <br />
@@ -45,7 +46,9 @@ const Vestimenta = ({ className, frontmatter }) => {
                 <p className="large text-muted">
                   <SectionHeader header="Hombres" />
                 </p>
+                <p> Formal casual <br /> </p>
                 <p className="large text-muted">
+
                   Traje formal
                   <br />
                 </p>
@@ -58,11 +61,13 @@ const Vestimenta = ({ className, frontmatter }) => {
           </Col>
           <Col lg={8} className="mx-auto text-center">
             <img
+
               src={men1}
               width="70%"
               height="80%"
               alt=""
               border-radius="70px"
+              className="conborde"
               align="center"
             />
           </Col>
@@ -78,8 +83,8 @@ const Vestimenta = ({ className, frontmatter }) => {
           ))}
         </Row>
           */}
-      </PageSection>
-    </div>
+      </PageSection >
+    </div >
   );
 };
 

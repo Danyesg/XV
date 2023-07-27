@@ -19,15 +19,15 @@ const Footer = ({ frontmatter }) => {
   } = frontmatter;
 
   return (
-    <footer className="footer py-3">
+    <footer >
       <Container>
-        <Row className="align-items-center text-center">
+        <Row align="center">
           <Col>
-            <p className="large text-muted">#DayraXV</p>
+            <p >#DayraXV</p>
           </Col>
         </Row>
       </Container>
-    </footer>
+    </footer >
   );
 };
 

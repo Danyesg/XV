@@ -18,17 +18,17 @@
     margin: 20px;
     font-size: 12pt;
     font-weight: 500;
-    color: #347a50f0; //color de letras Hasshtag
-    border: 3pt solid #367444bb;
-    background-color: #FAF9F6;
+    color: #1a472a; //color de letras Hasshtag
+    border: 3pt solid #9b9f9c; //color borde #
+    background-color: #f6faf8; // color fondo #
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 5px 5px #898882;
+    box-shadow: 5px 5px #1a472a; // color sombra #
 
     &:hover {
       background-color: darken($primary, 7.5%) !important;
       border-color: darken($primary, 7.5%) !important;
-      color: rgb(241, 238, 241);
+      color: rgb(238, 241, 240);
     }
 
     &:focus {
@@ -107,7 +107,7 @@
 
       .countWrapper {
         flex: 1;
-        border: 5px solid #dee2e6; //contorno
+        border: 5px solid #1a472a; //contorno
         border-radius: 20px;
         background-color: #f8f9fa;
         color: #1c604e; // numeros
@@ -116,7 +116,7 @@
         width: 110px;
         justify-content: center;
         justify-items: center;
-        box-shadow: 5px 5px #337357ba; //sombra count
+        box-shadow: 5px 5px #6a6c6b; //sombra count
 
         .count {
           font-size: 40px;
@@ -179,7 +179,7 @@
     }
 
     .finishedHeader {
-      color: #ced4da;
+      color: #cedad8;
     }
   }
 }
@@ -301,7 +301,7 @@
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
+  color: #37817c;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
@@ -333,7 +333,7 @@
 
 .active,
 .dot:hover {
-  background-color: #717171;
+  background-color: #f1faf9; // color del box del menu abajo
 }
 
 /* Fading animation */
@@ -381,4 +381,26 @@
   font-family: 'Edu VIC WA NT Beginner', cursive;
   font-size: larger;
 
+}
+
+iframe {
+  border-radius: 30px;
+
+}
+
+.conborde1 {
+  border: 5px dotted #1a472a;
+}
+
+.imgS {
+  border-radius: 30px;
+  box-shadow: 5px 5px #c0c4c2;
+
+}
+
+.marco {
+
+  border-width: 5px;
+  border-color: #1a472a;
+  border-style: ridge;
 }

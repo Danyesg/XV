@@ -22,22 +22,31 @@
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", "Papyrus";
 }
 
+@import url('https://fonts.cdnfonts.com/css/harry-potter');
+
+@mixin harry {
+  font-family: 'Harry Potter', sans-serif;
+}
+
+
+
+
 
 /* Variables */
 // Restated Bootstrap Variables
-$white: #fff !default;
+$white: rgb(253, 255, 255) !default;
 //$gray-100: #d2e3f1 !default;
 //$gray-100: #E4D3CF !default;
-$gray-100: #eadb99 !default;
-$gray-200: #debfb0 !default;
+$gray-100: #6d997b !default;
+$gray-200: #4d927e !default;
 $gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #868e96 !default;
-$gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
-$color-1: #00ff08 !default;
+$gray-400: #dad1ce !default;
+$gray-500: #bdb4ad !default;
+$gray-600: #ffffff !default; //color subtitulos #1a472a
+$gray-700: #717171 !default;
+$gray-800: #77c096 !default;
+$gray-900: #000000 !default; //color de titulos 
+$color-1: #548d6d !default;
 $black: #000 !default;
 
 //$primary: #9ebc9f !default;

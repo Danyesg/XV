@@ -20,7 +20,7 @@
     border: 3pt solid #e2d116;
     background-color: rgba(255, 255, 255, 0);
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 500px;
     box-shadow: 5px 5px #9ccbbe;
 
     &:hover {
@@ -177,7 +177,7 @@
     }
 
     .finishedHeader {
-      color: #cedad7;
+      color: #9cf1dc;
     }
   }
 }
@@ -225,4 +225,17 @@
     margin-right: 50px;
     margin-left: 50px;
   }
+}
+
+.imgS {
+  border-radius: 30px;
+  box-shadow: 5px 5px #c0c4c2;
+
+}
+
+.marco {
+
+  border-width: 5px;
+  border-color: #606361;
+  border-style: ridge;
 }

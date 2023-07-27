@@ -77,41 +77,46 @@ const Location = ({ className, frontmatter }) => {
   const { anchor, header, subheader, subheader1 } = frontmatter;
 
   return (
-    <div className="outerWrapper">
-      <PageSection className={clsx("portfolio-section", className)} id={anchor}>
+    <div className="marco">
+      <PageSection className={clsx("portfolio-section", className)} id={anchor}  >
         <Row className="justify-content-center ceremony-header">
           <SectionHeader header={header} subheader={subheader} />
 
-          <a href="https://goo.gl/maps/bmsriTPk61RSy4Dq6">
+          <a href="https://goo.gl/maps/bmsriTPk61RSy4Dq6" >
             Cuautitlán Mz 511 Lote 32 Ciudad Azteca 1ra Sección, C.P. 55120 Ecatepec de Morelos.
+
           </a>
         </Row>
 
-        <div className="salon-location">
+        <div >
           <div align="center">
-            <img src={logo} width="50%" height="20%" alt="" border-radius="50px" /* tamaño imagen salon */ />
+            <img src={logo} width="50%" height="20%" alt="" className="imgS" /* tamaño imagen salon */ />
           </div>
 
         </ div>
         <br />
-        <div className="countdownAndVideoDiv" align="center">
+        <div className="countdownAndVideoDiv" align="center" >
           <iframe /* mapa del salon */
             title="map"
             id="mapa-terra"
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15040.290524506972!2d-99.0340671!3d19.5384951!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f00b58849c63%3A0x4674608844d92488!2sHacienda%20San%20Antonio!5e0!3m2!1ses-419!2smx!4v1687915193192!5m2!1ses-419!2smx"
+
 
             width="460%"
             height="400"
             style={{ border: 0 }}
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
+            border-radius="70px"
+            className="conborde1"
+
           />
         </div>{" "}
         <br />
 
         {/* countdownAndVideoDiv */}
       </PageSection>
-    </div>
+    </div >
   );
 };
 

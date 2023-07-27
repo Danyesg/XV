@@ -12,6 +12,7 @@ import instagram from "../../../../content/assets/images/Test/instagram.svg";
 import "./Portfolio.scss";
 import iglesia from "../../../../content/assets/images/iglesia.jpeg";
 
+
 const Portfolio = ({ className, frontmatter }) => {
   if (!frontmatter) {
     return null;
@@ -27,19 +28,19 @@ const Portfolio = ({ className, frontmatter }) => {
     notify.show(
       "Hashtag copiado en el portapapeles. Tómate un selfie y etiquétanos en las redes sociales!",
       "custom",
-      5000,
+      500,
       alertColor,
     );
   };
 
   const Completionist = () => {
     return (
-      <span className="" style={{ background: "red" }}>
-        <div className="countdownIntro">
+      <span className="marco">
+        <div className="marco">
           <b>Bienvenidos!</b>
         </div>
         {/* joinButtonWrapper */}
-        <div className="vendors">
+        <div className="marco">
           <p>
             <i>
               <b> Ceremonia:</b>
@@ -121,8 +122,9 @@ const Portfolio = ({ className, frontmatter }) => {
     return (
       <span>
 
-        <div className="countdownAndTanuki">
+        <div className="marco">
           <div className="countdownIntro">La celebracion será en:</div> {/* countdownIntro */}
+          <p align="center" className="large text-muted" >Noviembre 18, 2023 7:00 PM </p>
           <div align="center">
             <a href="https://goo.gl/maps/2HrVkkNNfwEKLfaa6" >
               Parroquia de Nuestra Señora de Guadalupe
@@ -166,8 +168,8 @@ const Portfolio = ({ className, frontmatter }) => {
   };
 
   return (
-    <div style={{ background: "red" }}>
-      <PageSection className={clsx("portfolio-section", className)} id={anchor} style={{ background: "red" }}>
+    <div >
+      <PageSection className={clsx("portfolio-section", className)} id={anchor} style={{ background: "#a5b5aa" }}>
         <Notifications options={{ zIndex: 200, top: "50px" }} />
         <Row className="justify-content-center ceremony-header">
           <SectionHeader header={header} subheader={subheader} />
@@ -192,12 +194,9 @@ const Portfolio = ({ className, frontmatter }) => {
 
 
 
-
-
-
         <div className="parroquia-location">
           <div align="center">
-            <img src={iglesia} width="50%" height="40%" alt="" border-radius="100px" />
+            <img src={iglesia} width="50%" height="40%" alt="" border-radius="100px" className="imgS" />
           </div>
 
         </ div>
@@ -206,7 +205,7 @@ const Portfolio = ({ className, frontmatter }) => {
           <iframe
             title="map"
             id="parroquia-terra"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.580869207174!2d-99.05346948255615!3d19.473629499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fb05fb9202c3%3A0xd4793bf7b1c327f!2sParroquia%20de%20Nuestra%20Se%C3%B1ora%20de%20Guadalupe!5e0!3m2!1ses-419!2smx!4v1689030734635!5m2!1ses-419!2smx"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.580869207174!2d-99.0512808!3d19.4736295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fb05fb9202c3%3A0xd4793bf7b1c327f!2sParroquia%20de%20Nuestra%20Se%C3%B1ora%20de%20Guadalupe!5e0!3m2!1ses-419!2smx!4v1690401876486!5m2!1ses-419!2smx"
 
             width="360%"
             height="400"

@@ -22,7 +22,7 @@ module.exports = {
         short_name: "DayraXV",
         start_url: "/",
         background_color: "#ffffff",
-        theme_color: "#bc9eac",
+        theme_color: "#2a623d ", // color fondo celular
         display: "minimal-ui",
         icon: "content/assets/images/favicon.png",
       },

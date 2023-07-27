@@ -90,7 +90,7 @@ const Location = ({ className, frontmatter }) => {
 
         <div >
           <div align="center">
-            <img src={logo} width="50%" height="20%" alt="" className="imgS" /* tamaño imagen salon */ />
+            <img src={logo} width="70%" alt="" className="imgS" /* tamaño imagen salon */ />
           </div>
 
         </ div>

@@ -50,7 +50,7 @@ const Top = ({ frontmatter }) => {
             <button type="button" className="close" onClick={close}>
               &times;
             </button>
-            <div className="calendarHeader text-uppercase"> Recerva el dia !!</div>
+            <div className="calendarHeader text-uppercase"> Reserva el dia !!</div>
             <div className="calendarContent">
               <div className="calendarLinksWrapper">
                 <div>

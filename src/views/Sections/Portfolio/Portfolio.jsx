@@ -192,11 +192,11 @@ const Portfolio = ({ className, frontmatter }) => {
           </Row>
         </div>{" "}
 
-
+        <br />
 
         <div className="parroquia-location">
           <div align="center">
-            <img src={iglesia} width="50%" height="40%" alt="" border-radius="100px" className="imgS" />
+            <img src={iglesia} width="70%" alt="" border-radius="100px" className="imgS" />
           </div>
 
         </ div>

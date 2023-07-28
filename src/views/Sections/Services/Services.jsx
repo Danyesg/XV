@@ -33,7 +33,7 @@ const Services = ({ className, frontmatter }) => {
           align="center"
 
 
-          href="https://api.whatsapp.com/send/?phone=525555060528&text=Confirmo+mi+asistencia+a+mis+XV+Dayra&type=phone_number&app_absent=0"
+          href="https://api.whatsapp.com/send/?phone=525527704163&text=Confirmo+mi+asistencia+a+los+XV+años+de+Dayra&type=phone_number&app_absent=0"
         >
           <b className="buttonC" align="center" > ⚡ Confirma tu asistencia ⚡ </b>
 

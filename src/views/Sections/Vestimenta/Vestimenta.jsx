@@ -9,7 +9,7 @@ import SectionHeader from "components/SectionHeader";
 import PageSection from "components/PageSection";
 import "./Vestimenta.scss";
 
-import men1 from "../../../../content/assets/images/men.jpg";
+import men1 from "../../../../content/assets/images/pareja.png";
 
 const Vestimenta = ({ className, frontmatter }) => {
   if (!frontmatter) {
@@ -32,26 +32,18 @@ const Vestimenta = ({ className, frontmatter }) => {
                 <p className="large text-muted">
                   <SectionHeader header="Mujeres" />
                 </p>
-                <p> Formal casual <br /></p>
-                <p className="large text-muted">
-                  Vestido midi / coctel
-                  <br />
 
-                </p>
+
 
                 {/* <img src={men1} width="100%" height="40%" alt="" border-radius="100px" />
                  */}
               </div>
               <div align="center">
-                <p className="large text-muted">
+                <p className="large text-muted" >
                   <SectionHeader header="Hombres" />
                 </p>
-                <p> Formal casual <br /> </p>
-                <p className="large text-muted">
 
-                  Traje formal
-                  <br />
-                </p>
+
 
                 {/* <img src={men1} width="100%" height="40%" alt="" border-radius="100px" />
                  */}
@@ -60,11 +52,15 @@ const Vestimenta = ({ className, frontmatter }) => {
 
           </Col>
           <Col lg={8} className="mx-auto text-center">
+
+            <h4>
+              Formal casual <br /></h4>
+
             <img
 
               src={men1}
-              width="70%"
-              height="80%"
+              width="60%"
+
               alt=""
               border-radius="70px"
               className="conborde"

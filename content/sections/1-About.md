@@ -1,6 +1,5 @@
 ---
-anchor: "Nuestra Historia"
-header: "Nuestra Historia"
+
 subheader: "¡Ponte al día mientras comenzamos nuestro proximo capítulo!"
 timeline: [
   {

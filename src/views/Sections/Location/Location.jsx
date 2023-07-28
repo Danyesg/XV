@@ -82,7 +82,7 @@ const Location = ({ className, frontmatter }) => {
         <Row className="justify-content-center ceremony-header">
           <SectionHeader header={header} subheader={subheader} />
 
-          <a href="https://goo.gl/maps/bmsriTPk61RSy4Dq6" >
+          <a href="https://goo.gl/maps/bmsriTPk61RSy4Dq6" align="center">
             Cuautitlán Mz 511 Lote 32 Ciudad Azteca 1ra Sección, C.P. 55120 Ecatepec de Morelos.
 
           </a>

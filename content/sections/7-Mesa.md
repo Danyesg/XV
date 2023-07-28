@@ -1,6 +1,6 @@
 ---
-anchor: "Mesa de regalos"
-header: "Mesa de regalos"
+
+
 # subheader: "Established 2017"
 content: "Elegante"
 teamMember: [

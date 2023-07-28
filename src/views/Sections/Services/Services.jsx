@@ -35,22 +35,23 @@ const Services = ({ className, frontmatter }) => {
 
           href="https://api.whatsapp.com/send/?phone=525555060528&text=Confirmo+mi+asistencia+a+mis+XV+Dayra&type=phone_number&app_absent=0"
         >
-          <p className="buttonC" align="center" > ⚡ Confirma tu asistencia ⚡ </p>
+          <b className="buttonC" align="center" > ⚡ Confirma tu asistencia ⚡ </b>
 
         </Button>
         <br />
         <br />
-        <SectionHeader header="⚯  🪄 " subheader="" />{" "}
+        <SectionHeader header="⚯ ⚡ 🪄 " subheader="" />{" "}
         {" "}
 
       </div >
       <SectionHeader header="   " />
 
       <div align="center">
+        <br />
         <img
           src={Logo}
-          width="10%"
-          height="10%"
+          width="30%"
+          height="30%"
           alt=""
 
         />

@@ -16,7 +16,7 @@ const Vestimenta = ({ className, frontmatter }) => {
     return null;
   }
 
-  const { anchor, header: rootHeader, subheader: rootSubHeader, teamMember } = frontmatter;
+  const { anchor, header: rootHeader, subheader: rootSubHeader } = frontmatter;
 
   return (
     <div>

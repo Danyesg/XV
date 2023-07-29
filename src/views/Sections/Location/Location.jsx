@@ -74,10 +74,10 @@ const Location = ({ className, frontmatter }) => {
     return null;
   }
 
-  const { anchor, header, subheader, subheader1 } = frontmatter;
+  const { anchor, header, subheader } = frontmatter;
 
   return (
-    <div className="marco">
+    <div className="marco" align="center">
       <PageSection className={clsx("portfolio-section", className)} id={anchor}  >
         <Row className="justify-content-center ceremony-header">
           <SectionHeader header={header} subheader={subheader} />

@@ -62,41 +62,14 @@ export const query = graphql`
             iconName
             imageFileName
           }
-          social {
-            facebook
-            github
-            linkedin
-            medium
-            twitter
-            instagram
-            website
-          }
+          
           subheader
-          teamMember {
-            header
-            imageFileName
-            social {
-              facebook
-              github
-              linkedin
-              medium
-              twitter
-              instagram
-              website
-            }
-            subheader
-          }
+         
           telephone
           termsHref
           termsText
           title
-          timeline {
-            content
-            header
-            imageContent
-            imageFileName
-            subheader
-          }
+         
         }
         fields {
           fileName

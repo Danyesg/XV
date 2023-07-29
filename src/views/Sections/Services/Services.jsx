@@ -27,16 +27,18 @@ const Services = ({ className, frontmatter }) => {
 
         <SectionHeader subheader="Es un dia muy esperado para mi y mi familia que quiero compartir contigo, espero puedas acompañarnos y ser parte de este gran dia. Nos vemos pronto!!" />
         <Button
-          size="xl"
+
           variant="primary"
           className="buttonC"
           align="center"
 
 
+
           href="https://api.whatsapp.com/send/?phone=525527704163&text=Confirmo+mi+asistencia+a+los+XV+años+de+Dayra&type=phone_number&app_absent=0"
         >
-          <b className="buttonC" align="center" > ⚡ Confirma tu asistencia ⚡ </b>
-
+          <br />
+          <h4 className="buttonC" align="center" > ⚡ Confirma tu asistencia ⚡ </h4>
+          <br />
         </Button>
         <br />
         <br />

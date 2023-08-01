@@ -54,6 +54,13 @@
   }
 }
 
+.countdownIntro {
+  font-size: 28px;
+  text-align: center;
+  @include script-font;
+  margin-bottom: 35px;
+}
+
 @media (min-width: 768px) {
   .image-card {
     height: 759px;
